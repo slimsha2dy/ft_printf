@@ -3,5 +3,5 @@
 
 int	main(void)
 {
-	ft_printf("hi my name is %s %s, %d", "hwiyong", "choi", 26);
+	ft_printf("hi my name is %s %s, %d", "Hwiyong", "Choi", 26);
 }
