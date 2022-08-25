@@ -6,7 +6,7 @@
 /*   By: jfrusciante <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 01:50:35 by jfruscia          #+#    #+#             */
-/*   Updated: 2022/08/26 02:22:19 by jfruscia         ###   ########.fr       */
+/*   Updated: 2022/08/26 03:06:48 by jfruscia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ int		ft_printf_type(const char c, va_list ap);
 int		ft_printf_char(int c);
 int		ft_printf_str(char *str);
 int		ft_printf_nbr(int n);
+int		ft_printf_per(void);
 
 int		ft_nbr_len(unsigned int n);
 char	*ft_uitoa(unsigned int n);

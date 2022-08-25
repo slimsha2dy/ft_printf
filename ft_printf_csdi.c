@@ -6,7 +6,7 @@
 /*   By: jfrusciante <marvin@42.fr>                 +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/26 01:50:50 by jfruscia          #+#    #+#             */
-/*   Updated: 2022/08/26 02:47:57 by jfruscia         ###   ########.fr       */
+/*   Updated: 2022/08/26 03:06:31 by jfruscia         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,4 +48,10 @@ int	ft_printf_nbr(int n)
 	ret_len = ft_printf_str(nbr_str);
 	free(nbr_str);
 	return (ret_len);
+}
+
+int	ft_printf_per(void)
+{
+	write(1, "%", 1);
+	return (1);
 }
