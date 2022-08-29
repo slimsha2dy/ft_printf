@@ -6,7 +6,7 @@
 /*   By: hwichoi <hwichoi@student.42seoul.k>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/28 21:23:42 by hwichoi           #+#    #+#             */
-/*   Updated: 2022/05/17 21:45:55 by hwichoi          ###   ########.fr       */
+/*   Updated: 2022/08/29 15:59:07 by hwichoi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,7 @@ char	**ft_split(char const *s, char c)
 	cnt = 0;
 	size = 0;
 	buf = alloc_split(s, c, &size);
-	if (buf == 0)
-		return (0);
-	while (s[cnt] && ++i < size)
+	while (buf != 0 && s[cnt] && ++i < size)
 	{
 		while (s[cnt] == c && s[cnt])
 			cnt++;
